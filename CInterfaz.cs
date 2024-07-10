@@ -27,6 +27,7 @@ namespace College_Eugene_de_Mazenod
             Console.WriteLine("[C] Cantidad de Estudiante Ingresado");
             Console.WriteLine("[D] Mejor  Estudiante ");
             Console.WriteLine("[E] Promedio general de la Clase  ");
+            Console.WriteLine("[F] Lista de  Estudiante Ordenado ");
 
             return CInterfaz.PedirDato("Ingrese la Opcion Elegida");
         }

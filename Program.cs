@@ -39,6 +39,10 @@
                         Console.WriteLine("\n PROMEDIO GENERAL DE LA CLASE \n");
                         Console.WriteLine(Mazenod.PromedioAlumnos());
                         break;
+                    case 'F':
+                        Console.WriteLine("\n LA LISTA DE LOS ESTUDIANTE \n");
+                        Console.WriteLine(Mazenod.ListaDeAlumnosOrdenado());
+                        break;
                 }
 
             } while (Opcion !='S');

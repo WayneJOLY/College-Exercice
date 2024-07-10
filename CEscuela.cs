@@ -70,6 +70,13 @@ namespace College_Eugene_de_Mazenod
             }
             return MejorAlumno;
         }
+
+        public string ListaDeAlumnosOrdenado()
+        {
+            this.listaDeAlumnos.Sort();
+
+            return this.ListaDeAlumnos();
+        }
         public string ListaDeAlumnos()
         {
             string datos = " ********         ALUMNOS       *******************";
