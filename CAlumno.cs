@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace College_Eugene_de_Mazenod
 {
-    public class CAlumno
+    public class CAlumno:IComparable
     {
         string nombre;
         float nota ;
@@ -40,6 +40,15 @@ namespace College_Eugene_de_Mazenod
             return datos;
         }
 
-        
+        public int CompareTo(object? obj)
+        {
+            if (obj == null) return 1;
+
+            CAlumno p = obj as CAlumno;
+            if (p != null)
+                return this.nombre.CompareTo(p.nombre);
+            else
+                throw new ArgumentException("El objeto no es de tipo Alumno");
+        }
     }
 }
